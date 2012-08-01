@@ -1,6 +1,33 @@
----
-theme :
-  name : twitter
----
-{% include JB/setup %}
-{% include themes/twitter/default.html %}
+<!DOCTYPE html>
+<html lang="en">	
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" lang="sr" content="Nikola Balog, offinger@gmail.com">
+    <meta name="viewport" content="initial-scale=0.36">
+
+    <link rel="stylesheet" href="css/custom.css" charset="utf-8">
+    
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    
+    <script type="text/javascript" src="js/custom.js"></script>
+    
+    
+    
+
+
+    <title>Nikola Balog</title>
+    <meta name="description" content="Nikola Balog -
+    {% if page.desc %}{{ page.desc }}{% else %}{{ page.title }}{% endif %}">
+    
+   
+
+
+  </head>
+
+  <body>
+
+    {{ content }}
+
+  </body>
+</html>
